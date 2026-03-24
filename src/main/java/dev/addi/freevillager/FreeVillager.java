@@ -1,4 +1,4 @@
-package dev.addi.freeVillager;
+package dev.addi.freevillager;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

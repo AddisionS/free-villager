@@ -5,3 +5,6 @@ target/
 logs/
 .tmp
 .cache
+src/main/java/dev/addi/freevillager/gameplaychange.txt
+src/main/java/dev/addi/freevillager/llmfactors
+src/main/java/dev/addi/freevillager/villagerevents

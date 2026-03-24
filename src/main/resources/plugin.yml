@@ -1,6 +1,6 @@
 name: FreeVillager
 version: '1.0-SNAPSHOT'
-main: dev.addi.freeVillager.FreeVillager
+main: dev.addi.freevillager.FreeVillager
 api-version: '1.21'
 load: STARTUP
 authors: [ Addision ]

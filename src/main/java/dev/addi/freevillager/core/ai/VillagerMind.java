@@ -1,6 +1,6 @@
-package dev.addi.freeVillager.core.ai;
+package dev.addi.freevillager.core.ai;
 
-import dev.addi.freeVillager.core.identity.UVID;
+import dev.addi.freevillager.core.identity.UVID;
 
 import java.util.UUID;
 
