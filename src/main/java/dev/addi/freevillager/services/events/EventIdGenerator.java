@@ -1,4 +1,4 @@
-package dev.addi.freevillager.events;
+package dev.addi.freevillager.services.events;
 
 public class EventIdGenerator {
 

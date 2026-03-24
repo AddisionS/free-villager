@@ -1,7 +1,6 @@
 package dev.addi.freevillager.core.ai;
 
-import dev.addi.freevillager.core.identity.UVID;
-
+import dev.addi.freevillager.models.UVID;
 import java.util.UUID;
 
 public class VillagerMind {

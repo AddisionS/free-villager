@@ -1,4 +1,4 @@
-package dev.addi.freevillager.core.identity;
+package dev.addi.freevillager.models;
 
 import java.util.Objects;
 import java.util.UUID;
