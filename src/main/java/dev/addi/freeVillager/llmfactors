@@ -1,0 +1,191 @@
+🧠 Villager (Adult) Factors
+
+Trust
+
+Fear
+
+Anger
+
+Joy
+
+Suspicion
+
+Loyalty
+
+Language Proficiency
+
+Intelligence
+
+Emotional State (current, temporary override)
+
+Knowledge Domains
+
+Crafting Basics
+
+Trading Economy
+
+Danger Signals
+
+Social Rules
+
+Weather Patterns
+
+Health Maintenance
+
+Relationship Dynamics
+
+Parent UUIDs
+
+Interaction History (players + villagers)
+
+Trust Bias
+
+Communication Range
+
+Behavior Modifiers
+
+Bravery
+
+Greed
+
+Stress
+
+Profession / Role
+
+👶 Baby Villager Factors
+Gender
+
+Sexuality (latent / undecided)
+
+Age
+
+Parent UUIDs
+
+Attachment to Parent
+
+Curiosity
+
+Fear
+
+Joy
+
+Intelligence (baseline)
+
+Impressionability
+
+Cry Frequency
+
+Hunger Level
+
+Safety Sensitivity
+
+Learning Rate
+
+Memory Span
+
+Awareness Range
+
+🤝 Interaction Factors
+Involved UUIDs (Player or Villager)
+
+Interaction Type (e.g., trade, harm, gift, speak, ignore)
+
+Trust Score
+
+Affection Score
+
+Respect Score
+
+Last Interaction Timestamp
+
+Interaction Frequency
+
+Gossip/Communication Tags
+
+Public vs Private Context
+
+Emotional State During Interaction
+
+Reputation Impact
+
+Memory Decay Rate
+
+Relevance Score
+
+ Stimulus Sensitivity
+Threat Sensitivity — How prone the villager is to perceive danger
+
+Sound Sensitivity — Reaction to loud noises (explosions, thunder, etc.)
+
+Visual Sensitivity — Response to things seen (e.g. fighting, death, zombies)
+
+Crowd Influence Bias — How easily they're influenced by the surrounding mob behavior
+
+Pattern Recognition — How well they connect past events to current stimuli
+
+Alertness — Overall awareness of surroundings and capacity to detect change
+
+Information Spread Rate — Speed at which they choose to spread news
+
+Information Trust Bias — Likelihood of believing heard/gossiped info
+
+Empathy Trigger — Tendency to mirror or emotionally sync with others nearby
+
+🔸 Internal Response Modifiers
+Fear Amplification — How fear scales with proximity/severity of stimulus
+
+Curiosity Trigger — If an event draws attention instead of scaring them
+
+Panic Threshold — How intense a stimulus must be before causing panic
+
+Aggression Trigger — Proneness to respond with hostility
+
+Empathy Overload — If emotional input from too many sources breaks composure
+
+Grief Response — Tendency to react emotionally to death/loss
+
+Excitement Threshold — How easily positive stimuli cause joy/interest
+
+Social Reinforcement Bias — Will they go along with crowd consensus or stay individual
+
+Shock Absorption — How quickly they return to baseline after a stimulus
+
+Communication Reflex — How likely they are to spread emotional response
+
+
+
+
+VillagerMind
+ ├── Identity
+ │     ├── UVID
+ │     └── UUID
+ │
+ ├── Cognition
+ │     ├── learningRate
+ │     ├── memoryCapacity
+ │     └── reasoning
+ │
+ ├── Personality
+ │     ├── empathy
+ │     ├── aggression
+ │     ├── bravery
+ │     └── greed
+ │
+ ├── EmotionalState
+ │     ├── fear
+ │     ├── anger
+ │     ├── joy
+ │     └── loneliness
+ │
+ ├── SocialRelations
+ │     └── Map<UVID, RelationData>
+ │
+ └── Memory
+       └── EventMemory[]
+
+
+ Δemotion =
+     baseEventImpact
+     × personalityModifier
+     × memoryModifier
+     + randomNoise
